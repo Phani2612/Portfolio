@@ -8,7 +8,7 @@
     padding: 20px;
     margin: 0 auto;
     gap: 20px;
-    border: 1px solid black;
+    
 
 
   }
@@ -82,7 +82,7 @@
 /* Mobile (0px - 600px) */
 @media (max-width: 600px) {
   .project-container {
-    width: 80%; /* Full-width container for smaller screens */
+    width: 70%; /* Full-width container for smaller screens */
     padding: 15px;
   }
 

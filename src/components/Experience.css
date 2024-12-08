@@ -97,7 +97,7 @@
 /* Mobile (0px - 600px) */
 @media (max-width: 600px) {
   .experience-container {
-      width: 80%;
+      width: 70%;
       padding: 15px; /* Compact layout */
   }
 

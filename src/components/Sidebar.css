@@ -99,6 +99,7 @@
     top: 20px;  /* Adjust positioning if needed */
     left: 20px;
     z-index: 1000;  /* Ensure the hamburger icon stays above the sidebar */
+    
   }
 
   /* Sidebar when open */

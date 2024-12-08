@@ -71,7 +71,7 @@ input{
 /* Mobile (0px - 600px) */
 @media (max-width: 600px) {
     .skills-container {
-      width: 80%; /* Use nearly full screen width */
+      width: 70%; /* Use nearly full screen width */
       padding: 15px; /* Reduce padding */
     }
   
@@ -83,7 +83,7 @@ input{
     }
   
     input {
-      width: 90%; /* Make input adapt to screen width */
+      width: 80%; /* Make input adapt to screen width */
     }
   
     #range-con {

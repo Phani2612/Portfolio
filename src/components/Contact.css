@@ -8,7 +8,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
-    width: 80%;
+    width: 75%;
   }
   
   .contact-title {
@@ -104,7 +104,7 @@
 /* Mobile (0px - 600px) */
 @media (max-width: 600px) {
   .contact-container {
-      width: 80%; /* Make container almost full-width */
+      width: 70%; /* Make container almost full-width */
       padding: 20px; /* Reduce padding */
   }
 
@@ -118,7 +118,7 @@
   }
 
   .contact-item {
-      width: 80%; /* Full width for items */
+      width: 70%; /* Full width for items */
       padding: 15px; /* Reduce padding */
   }
 
@@ -132,7 +132,7 @@
   }
 
   .contact-text p {
-      font-size: 0.9rem; /* Adjust paragraph size */
+      font-size: 0.6rem; /* Adjust paragraph size */
   }
 }
 
