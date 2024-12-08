@@ -1,0 +1,76 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#home, #about, #skills, #education, #experience, #projects, #contact {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  flex-shrink: 0;
+}
+
+section {
+  margin-bottom: 10px;
+}
+
+/* Apply a flex container to the body for equal distribution */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Apply a flex container to the body for equal distribution */
+
+
+
+
+
+
+/* Media Queries */
+
+/* 0 - 600px (Mobile Devices) */
+@media (max-width: 600px) {
+  #home, #about, #skills, #education, #experience, #projects, #contact {
+    padding: 50px 0; /* Reduced padding for smaller screens */
+    min-height: 60vh; /* Reduced section height */
+  }
+  
+  section {
+    margin-bottom: 100px; /* Reduced margin for smaller screens */
+  }
+}
+
+/* 601 - 767px (Small Tablets or Larger Mobile Devices) */
+@media (min-width: 601px) and (max-width: 767px) {
+  #home, #about, #skills, #education, #experience, #projects, #contact {
+    padding: 60px 0; /* Slightly reduced padding */
+    min-height: 70vh; /* Slightly reduced section height */
+  }
+
+  section {
+    margin-bottom: 150px; /* Adjusted margin for this range */
+  }
+}
+
+/* 768px to 1200px (Tablets in Landscape to Small Desktops) */
+@media (min-width: 768px) and (max-width: 1200px) {
+  #home, #about, #skills, #education, #experience, #projects, #contact {
+    padding: 80px 0; /* Maintain larger padding for tablets and small desktops */
+    min-height: 80vh; /* Maintain section height */
+  }
+  
+  section {
+    margin-bottom: 200px; /* Standard margin for tablets and desktops */
+  }
+}
+

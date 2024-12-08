@@ -1,0 +1,163 @@
+.skills-container{
+
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin: 0 auto;
+     padding: 20px;
+     width: 80%; /* Set a percentage width to prevent overflowing */
+
+     background-color: #f4f7fa;
+     border-radius: 10px;
+
+     gap: 20px;
+     
+}
+
+
+
+
+.skill-range{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    width: 95%;
+
+    height: 500px;
+
+    justify-content: space-between;
+
+   
+}
+
+
+#range-con{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+
+/* Apply width of 400px to all range inputs */
+/* #html-range,
+#css-range,
+#js-range,
+#mern-range,
+#python-range,
+#chatgpt-range,
+#nextjs-range,
+#git-range {
+  width: 100px;
+} */
+
+
+input{
+
+    width: 400px;
+}
+
+
+
+
+
+
+
+/* --- Media Queries --- */
+
+/* Mobile (0px - 600px) */
+@media (max-width: 600px) {
+    .skills-container {
+      width: 80%; /* Use nearly full screen width */
+      padding: 15px; /* Reduce padding */
+    }
+  
+    .skill-range {
+      flex-direction: column; /* Stack skill ranges vertically */
+      height: auto; /* Allow dynamic height */
+      align-items: center; /* Center-align content */
+      justify-content: flex-start; /* Align items to the top */
+    }
+  
+    input {
+      width: 90%; /* Make input adapt to screen width */
+    }
+  
+    #range-con {
+      align-items: center; /* Center content on smaller screens */
+      width: 100%;
+    }
+  }
+  
+  /* Tablet (601px - 767px) */
+  @media (min-width: 601px) and (max-width: 767px) {
+    .skills-container {
+      width: 80%; /* Slightly reduce container width */
+      padding: 20px;
+    }
+  
+    .skill-range {
+      flex-direction: row; /* Maintain row layout */
+      flex-wrap: wrap;
+      justify-content: center; /* Center skill items */
+      gap: 20px;
+      height: auto; /* Allow dynamic height */
+    }
+  
+    input {
+      width: 300px; /* Adjust input width for tablet */
+    }
+  
+    #range-con {
+      align-items: flex-start;
+    }
+  }
+  
+  /* Desktop (768px - 1200px) */
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .skills-container {
+      width: 80%; /* Standard container width */
+    }
+  
+    .skill-range {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: auto;
+    }
+  
+    input {
+      width: 350px; /* Adjust input size for medium screens */
+    }
+  
+    #range-con {
+      align-items: flex-start;
+    }
+  }
+  
+ 
+
+  /* Ultra-Wide Screens (1201px and above) */
+@media (min-width: 1201px ) and (max-width : 1300px) {
+  .skills-container {
+    width: 80%; /* Slightly reduce width for better visual balance */
+    height: 1000px;
+  }
+
+  .skill-range {
+    justify-content: space-between;
+    gap: 30px;
+    height: 300px;
+  }
+
+  input {
+    width: 400px; /* Keep input size consistent with base styles */
+  }
+
+  #range-con {
+    align-items: flex-start;
+  }
+}

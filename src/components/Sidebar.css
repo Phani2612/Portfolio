@@ -1,0 +1,281 @@
+/* Sidebar Container */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(135deg, #4a90e2, #145388);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  
+  /* Profile Section */
+  .profile {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.1);
+  }
+  
+  .profile-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the links horizontally */
+    justify-content: center; /* Center the links vertically */
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px 20px;
+    width: 80%; /* Make the links take up 80% of the sidebar's width */
+    text-align: center; /* Center text inside the links */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+  
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+  }
+  
+  html {
+    scroll-behavior: smooth; /* Enables smooth scrolling across the page */
+  }
+  
+ 
+
+  .hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+    margin: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+ 
+
+
+/* Mobile (0px - 600px) */
+@media (max-width: 600px) {
+  /* Initially, hide the sidebar */
+  .sidebar {
+    display: none;
+  }
+
+  /* Show the hamburger icon */
+  .hamburger {
+    display: block;
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;  /* Make the hamburger icon fixed to the top */
+    top: 20px;  /* Adjust positioning if needed */
+    left: 20px;
+    z-index: 1000;  /* Ensure the hamburger icon stays above the sidebar */
+  }
+
+  /* Sidebar when open */
+  .sidebar.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;  /* Fix the sidebar to the left side of the screen */
+    top: 0;
+    left: 0;
+    width: 250px;  /* Sidebar width */
+    height: 100vh;  /* Full viewport height */
+    background: linear-gradient(135deg, #4a90e2, #145388);
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;  /* Ensure sidebar is above other content */
+    padding-top: 50px; /* Give some space below the profile */
+    overflow: auto;
+  }
+
+  /* Profile Section Inside Sidebar */
+  .profile {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .profile-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  /* Navigation Links Inside Sidebar */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    font-size: 1rem;  /* Decreased font size */
+    padding: 12px;    /* Reduced padding for smaller links */
+    width: 80%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  /* Content remains scrollable when sidebar is open */
+  body {
+    overflow: auto;  /* Allow scrolling of the entire body */
+  }
+}
+
+
+
+
+
+/* Tablet (601px - 767px) */
+@media (min-width: 601px) and (max-width: 767px) {
+
+  /* Sidebar Container */
+  .sidebar {
+    width: 100%; /* Slightly narrower sidebar for tablet */
+    height: 200px;
+    background: linear-gradient(135deg, #4a90e2, #145388);
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Keep sidebar items in column for general layout */
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px; /* Adjust padding for smaller space */
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  /* Profile Section */
+  .profile {
+    text-align: center;
+   
+    display: flex; /* Apply flex to the profile for row-wise layout */
+    flex-direction: column; /* Change to row-wise layout */
+   
+    align-items: center; /* Align items vertically in the center */
+  }
+
+  .profile-pic {
+    width: 50px; /* Adjusted profile picture size */
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .profile-pic:hover {
+    transform: scale(1.1);
+  }
+
+  .profile-name {
+    
+    font-weight: bold;
+  }
+
+  /* Navigation Links */
+  .nav-links {
+   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   
+    
+    
+  }
+
+  .nav-link {
+    text-decoration: none;
+   
+    color: #fff;
+    padding: 12px 20px; /* Adjust padding for better clickability */
+    text-align: center;
+    border-radius: 5px;
+  
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop (768px - 1200px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .sidebar {
+    width: 220px; /* Medium-sized sidebar */
+    padding: 20px; /* Standard padding */
+  }
+
+  .profile-pic {
+    width: 100px; /* Original profile picture size */
+    height: 100px;
+  }
+
+  .profile-name {
+    font-size: 1.2rem; /* Standard font size */
+  }
+
+  .nav-link {
+    font-size: 1rem; /* Standard link font size */
+    padding: 10px 20px; /* Standard padding */
+  }
+}
+

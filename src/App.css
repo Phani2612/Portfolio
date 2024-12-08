@@ -1,0 +1,124 @@
+/* Ensure the entire app is centered and scales smoothly */
+.App {
+  display: flex;
+  justify-content: center; /* Centers the app horizontally */
+  align-items: center; /* Centers the app vertically */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  overflow: hidden; /* Prevents unwanted scrolling */
+}
+
+/* Layout container */
+.app-container {
+  display: flex;
+  flex-direction: row; /* Sidebar on the left, content on the right */
+  width: 100%; /* Full width of the viewport */
+  height: 100%; /* Full height of the viewport */
+  max-width: 1400px; /* Limit the app's maximum width */
+  margin: 0 auto; /* Centers the app horizontally */
+}
+
+/* Sidebar styles */
+.Sidebar {
+  flex: 0 0 250px; /* Sidebar width (fixed) */
+  height: 100%; /* Full height of the viewport */
+  background-color: #f4f4f4; /* Example background */
+  overflow-y: auto; /* Allow scrolling within the sidebar */
+}
+
+/* Main content area */
+.content {
+  flex: 1; /* Take up remaining space */
+  padding: 20px;
+  overflow-y: auto; /* Allow vertical scrolling for content */
+}
+
+/* Prevent horizontal scrolling when zooming out */
+body {
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling between sections */
+}
+
+
+
+
+
+
+
+
+/* --- Media Queries --- */
+
+/* Mobile (0px - 600px) */
+@media (max-width: 600px) {
+  .App {
+    justify-content: flex-start; /* Align content to the top for small screens */
+    align-items: flex-start;
+  }
+
+  .app-container {
+    flex-direction: column; /* Stack the sidebar and content vertically */
+    height: 100%; /* Full height */
+    width: 100%;
+  }
+
+  .Sidebar {
+    width: 100%; /* Sidebar takes full width on mobile */
+    flex: 0 0 auto; /* Allow sidebar to take its natural height */
+    position: absolute; /* Sidebar becomes fixed and on top in smaller viewports */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff; /* Optional: make sidebar background more distinct */
+    z-index: 10; /* Ensure it stays on top */
+  }
+
+  .content {
+    padding: 15px;
+    width: 100%; /* Content takes up full width */
+  }
+
+  /* Optional: Ensure no horizontal scrolling on mobile */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Tablet (601px - 767px) */
+@media (min-width: 601px) and (max-width: 767px) {
+  .app-container {
+    flex-direction: column; /* Stack sidebar and content vertically for tablets */
+  }
+
+  .Sidebar {
+    width: 100%; /* Sidebar takes up full width */
+    height: 50px; /* Sidebar becomes a top nav bar */
+  }
+
+  .content {
+    width: 100%; /* Content takes full width */
+  }
+}
+
+/* Desktop (768px - 1200px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .App {
+    justify-content: center; /* Center content for medium-sized screens */
+    align-items: center;
+  }
+
+  .app-container {
+    flex-direction: row; /* Sidebar and content side-by-side */
+  }
+
+  .Sidebar {
+    width: 250px; /* Maintain fixed sidebar width */
+    height: 100%; /* Full height */
+  }
+
+  .content {
+    padding: 20px;
+    width: calc(100% - 250px); /* Account for sidebar width */
+  }
+}
+

@@ -1,0 +1,121 @@
+.home-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text inside the h1 */
+  width: 80%;
+  border-radius: 10px;
+  overflow: hidden; /* Prevent content overflow */
+  position: relative; /* Enable layering for text and image */
+  height: 600px; /* Match the height of the image */
+
+  
+}
+
+#home-h1 {
+  font-size: 2.5rem; /* Large, attractive font size */
+  font-family: 'Arial', sans-serif; /* Elegant font */
+  font-weight: bold; /* Bold text */
+  color: white; /* White text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for better readability */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add some padding */
+  border-radius: 10px; /* Rounded corners for the heading */
+  background-color: rgba(0, 0, 0, 0.4); /* Slight transparent background behind the text */
+  position: absolute; /* Position over the image */
+  bottom: 10%; /* Adjust placement above the bottom */
+  text-align: center;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition for text */
+  opacity: 0; /* Initially hidden */
+}
+
+#home-image {
+  width: 100%;
+  height: 100%; /* Fill the container */
+  object-fit: cover; /* Ensure the image scales properly */
+  position: absolute; /* Layer below the text */
+  top: 0; /* Align the image with the container */
+  left: 0;
+  z-index: -1; /* Place the image behind the text */
+  border-radius: 10px;
+  transition: opacity 1s ease-in-out; /* Smooth transition for image */
+  opacity: 0; /* Initially hidden */
+}
+
+.home-con.fade-in #home-h1,
+.home-con.fade-in #home-image {
+  opacity: 1; /* Make elements visible */
+  transform: translateY(0); /* Bring text back to position */
+}
+
+.home-con.fade-in #home-h1 {
+  transform: translateY(-20px); /* Subtle slide-in effect for text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Media Queries --- */
+
+/* Mobile (0px - 600px) */
+@media (max-width: 600px) {
+  .home-con {
+    width: 80%; /* Make container wider to fit smaller screens */
+    height: 400px; /* Reduce height for smaller screens */
+  }
+
+  #home-h1 {
+    font-size: 1.8rem; /* Smaller text for mobile */
+    padding: 15px; /* Adjust padding */
+    bottom: 15%; /* Slightly higher position */
+  }
+
+  #home-image {
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+}
+
+/* Tablet (601px - 767px) */
+@media (min-width: 601px) and (max-width: 767px) {
+  .home-con {
+    width: 80%; /* Slightly wider layout */
+    height: 500px; /* Balanced height for medium screens */
+  }
+
+  #home-h1 {
+    font-size: 2rem; /* Adjust font size */
+    padding: 18px; /* Balanced padding */
+    bottom: 12%; /* Adjust positioning for proportion */
+  }
+
+  #home-image {
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+}
+
+/* Larger Desktops (768px - 1200px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .home-con {
+    width: 85%; /* Slightly wider layout for desktops */
+    height: 550px; /* Adjust height for larger screens */
+  }
+
+  #home-h1 {
+    font-size: 2.3rem; /* Slightly smaller than the default */
+    bottom: 10%; /* Default position */
+  }
+
+  #home-image {
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+}
+

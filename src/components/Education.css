@@ -1,0 +1,187 @@
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #f4f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .education-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #college-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    width: 80%;
+  }
+  
+  #college-con h1 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  #college-con:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  #college-con.highlighted {
+    background-color: #145388; /* Highlight color when active */
+    color: #fff; /* Text color for highlight */
+  }
+  
+  #college-con.highlighted h1 {
+    color: #fff;
+  }
+
+  /* #4a90e2 */
+  
+  #college-open {
+    margin-top: 10px;
+    padding: 20px;
+    background-color:#4a90e2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease; /* Smooth appearing animation */
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #college-open h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin: 5px 0;
+  }
+  
+
+
+
+
+
+
+
+
+
+  /* --- Media Queries --- */
+
+/* Mobile (0px - 600px) */
+@media (max-width: 600px) {
+  .education-container {
+      width: 80%; /* Expand to nearly full width */
+      padding: 15px; /* Reduce padding */
+  }
+
+  .education-title {
+      font-size: 1.6rem; /* Reduce title font size */
+  }
+
+  #college-con {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      gap: 10px; /* Add spacing */
+      width: 90%; /* Full width for container */
+      padding: 15px; /* Reduce padding */
+      
+  }
+
+  #college-con h1 {
+      font-size: 1.2rem; /* Smaller heading */
+      text-align: center;
+  }
+
+  #college-open {
+      padding: 15px; /* Adjust padding */
+  }
+
+  #college-open h3 {
+      font-size: 1rem; /* Adjust font size */
+  }
+}
+
+/* Tablet (601px - 767px) */
+@media (min-width: 601px) and (max-width: 767px) {
+  .education-container {
+      width: 80%; /* Adjust width */
+      padding: 20px;
+  }
+
+  .education-title {
+      font-size: 1.8rem; /* Slightly smaller font size */
+  }
+
+  #college-con {
+      flex-direction: row; /* Keep horizontal layout */
+      width: 80%; /* Slightly smaller width */
+      padding: 18px;
+  }
+
+  #college-con h1 {
+      font-size: 1.4rem; /* Adjust heading size */
+  }
+
+  #college-open {
+      padding: 18px;
+  }
+
+  #college-open h3 {
+      font-size: 1.1rem; /* Adjust font size */
+  }
+}
+
+/* Larger Desktops (768px - 1200px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .education-container {
+      width: 75%; /* Adjust container width */
+      padding: 30px;
+  }
+
+  .education-title {
+      font-size: 2rem; /* Keep font size consistent */
+  }
+
+  #college-con {
+      width: 80%; /* Maintain layout with centered content */
+      padding: 20px;
+  }
+
+  #college-con h1 {
+      font-size: 1.5rem;
+  }
+
+  #college-open {
+      padding: 20px;
+  }
+
+  #college-open h3 {
+      font-size: 1.2rem; /* Match base styles */
+  }
+}

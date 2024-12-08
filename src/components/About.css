@@ -1,0 +1,135 @@
+.about-con {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    width: 80%; /* Set a percentage width to prevent overflowing */
+ 
+    border-radius: 10px;
+    background-color: #f4f7fa;
+   
+}
+
+p {
+    text-align: left;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap when space is constrained */
+    justify-content: space-between;
+    
+    width: 100%;
+    gap: 30px; /* Spacing between items */
+}
+
+#cont-1 {
+    border: 1px solid black;
+    flex: 1; /* Allow items to take up equal space */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    max-width: 300px; /* Optional: Limit the maximum size of each item */
+}
+
+#mern-logo {
+    height: 100px;
+    width: 100px;
+}
+
+/* Prevent horizontal scrolling when zooming */
+body {
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+
+
+
+
+
+
+
+
+
+/* Media */
+
+
+
+/* Mobile (0px - 600px) */
+@media (max-width: 600px) {
+    .about-con {
+        width: 80%; /* Expand to almost full width */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .containers {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Smaller gap between items */
+        align-items: center;
+    }
+
+    #cont-1 {
+        width: 60%;
+        height: auto; /* Adjust height to content */
+    }
+
+    #mern-logo {
+        height: 50px; /* Reduce size */
+        width: 50px;
+    }
+}
+
+/* Tablet (601px - 767px) */
+@media (min-width: 601px) and (max-width: 767px) {
+    .about-con {
+        width: 80%; /* Slightly wider than on mobile */
+    }
+
+    .containers {
+        justify-content: center; /* Center items horizontally */
+        gap: 25px; /* Adjust gap between items */
+    }
+
+    #cont-1 {
+        max-width: 45%; /* Two items per row */
+    }
+
+    #mern-logo {
+        height: 90px;
+        width: 90px;
+    }
+
+    
+}
+
+/* Larger Desktops (768px - 1200px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .about-con {
+        width: 85%; /* Adjust width for larger screens */
+    }
+
+    .containers {
+        justify-content: space-between; /* Spread items across the row */
+        gap: 30px; /* Restore gap size */
+    }
+
+    #cont-1 {
+        max-width: 30%; /* Three items per row */
+    }
+
+    #mern-logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .containers h3, .containers h4{
+
+        font-size: 15px;
+    }
+}

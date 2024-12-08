@@ -1,0 +1,200 @@
+.experience-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f4f7fa;
+ 
+    border-radius: 10px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .experience-box {
+    border: 2px solid #4a90e2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 80%;
+  }
+  
+  .experience-box:hover {
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience-box.expanded {
+    background-color: #e8f5e9;
+  }
+  
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h3 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 1.6rem;
+  }
+  
+  .role,
+  .technology,
+  .projects,
+  .skills {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .experience-details {
+    margin-top: 15px;
+  }
+  
+  .experience-details ul {
+    padding-left: 20px;
+  }
+  
+  .experience-details li {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #34495e;
+  }
+  
+  .toggle-icon {
+    font-size: 1.2rem;
+    color: #3498db;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .toggle-icon:active {
+    transform: scale(1);
+  }
+  
+
+
+
+
+
+
+
+
+  /* --- Media Queries --- */
+
+/* Mobile (0px - 600px) */
+@media (max-width: 600px) {
+  .experience-container {
+      width: 80%;
+      padding: 15px; /* Compact layout */
+  }
+
+  .section-title {
+      font-size: 1.6rem; /* Reduce title size */
+  }
+
+  .experience-box {
+      width: 80%; /* Full width for better readability */
+      padding: 15px;
+  }
+
+  .experience-header h3 {
+      font-size: 1.4rem; /* Reduce font size */
+  }
+
+  .role,
+  .technology,
+  .projects,
+  .skills {
+      font-size: 0.9rem; /* Adjust font size */
+  }
+
+  .experience-details li {
+      font-size: 0.85rem; /* Slightly smaller font for mobile */
+  }
+
+  .toggle-icon {
+      font-size: 1rem; /* Compact icon size */
+  }
+}
+
+/* Tablet (601px - 767px) */
+@media (min-width: 601px) and (max-width: 767px) {
+  .experience-container {
+      width: 80%; /* Adjust width for medium screens */
+  }
+
+  .section-title {
+      font-size: 1.8rem; /* Slightly smaller than desktop */
+  }
+
+  .experience-box {
+      width: 80%; /* Fit content without overwhelming width */
+  }
+
+  .experience-header h3 {
+      font-size: 1.5rem; /* Adjust header size */
+  }
+
+  .role,
+  .technology,
+  .projects,
+  .skills {
+      font-size: 0.95rem; /* Maintain clarity */
+  }
+
+  .experience-details li {
+      font-size: 0.9rem; /* Balanced readability */
+  }
+
+  .toggle-icon {
+      font-size: 1.1rem; /* Adjust for medium screens */
+  }
+}
+
+/* Larger Desktops (768px - 1200px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .experience-container {
+      width: 75%; /* Shrink slightly for larger desktops */
+      padding: 25px; /* Maintain proportions */
+  }
+
+  .section-title {
+      font-size: 2rem; /* Maintain desktop size */
+  }
+
+  .experience-box {
+      width: 80%; /* Centered, proportional width */
+  }
+
+  .experience-header h3 {
+      font-size: 1.6rem; /* Match base styles */
+  }
+
+  .role,
+  .technology,
+  .projects,
+  .skills {
+      font-size: 1rem; /* Consistent with desktop styles */
+  }
+
+  .experience-details li {
+      font-size: 0.95rem; /* Match desktop styles */
+  }
+
+  .toggle-icon {
+      font-size: 1.2rem; /* Default icon size */
+  }
+}

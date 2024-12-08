@@ -1,0 +1,203 @@
+/* Container for the contact page */
+.contact-container {
+    
+    margin: 0 auto;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    width: 80%;
+  }
+  
+  .contact-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .contact-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+  }
+  
+  /* Flexbox layout for contact items */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-icon {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-right: 20px;
+  }
+  
+  .contact-text {
+    font-size: 1rem;
+    color: #34495e;
+  }
+  
+  .contact-text h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #2c3e50;
+  }
+  
+  .contact-text p {
+    margin-top: 5px;
+    color: #7f8c8d;
+  }
+  
+  /* Email link styling */
+  .email-link {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+
+
+
+
+
+
+
+
+
+  /* --- Media Queries --- */
+
+/* Mobile (0px - 600px) */
+@media (max-width: 600px) {
+  .contact-container {
+      width: 80%; /* Make container almost full-width */
+      padding: 20px; /* Reduce padding */
+  }
+
+  .contact-title {
+      font-size: 2rem; /* Reduce title font size */
+  }
+
+  .contact-subtitle {
+      font-size: 1rem; /* Adjust subtitle font size */
+      margin-bottom: 20px;
+  }
+
+  .contact-item {
+      width: 80%; /* Full width for items */
+      padding: 15px; /* Reduce padding */
+  }
+
+  .contact-icon {
+      font-size: 2rem; /* Smaller icons */
+      margin-right: 15px;
+  }
+
+  .contact-text h3 {
+      font-size: 1rem; /* Adjust heading size */
+  }
+
+  .contact-text p {
+      font-size: 0.9rem; /* Adjust paragraph size */
+  }
+}
+
+/* Tablet (601px - 767px) */
+@media (min-width: 601px) and (max-width: 767px) {
+  .contact-container {
+      width: 80%; /* Slightly smaller width */
+      padding: 30px; /* Adjust padding */
+  }
+
+  .contact-title {
+      font-size: 2.5rem; /* Slightly smaller font size */
+  }
+
+  .contact-subtitle {
+      font-size: 1.1rem; /* Adjust subtitle font size */
+  }
+
+  .contact-item {
+      width: 80%; /* Take up more space */
+      padding: 18px; /* Slightly smaller padding */
+  }
+
+  .contact-icon {
+      font-size: 2.2rem; /* Smaller icon size */
+  }
+
+  .contact-text h3 {
+      font-size: 1.1rem;
+  }
+
+  .contact-text p {
+      font-size: 0.95rem;
+  }
+}
+
+/* Larger Desktops (768px - 1200px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .contact-container {
+      width: 75%; /* Adjust width for larger desktops */
+      padding: 40px;
+  }
+
+  .contact-title {
+      font-size: 3rem; /* Keep large font size */
+  }
+
+  .contact-subtitle {
+      font-size: 1.2rem; /* Maintain base subtitle size */
+  }
+
+  .contact-item {
+      width: 80%; /* Larger items with consistent layout */
+      padding: 20px;
+  }
+
+  .contact-icon {
+      font-size: 2.5rem; /* Keep icon size consistent */
+  }
+
+  .contact-text h3 {
+      font-size: 1.2rem;
+  }
+
+  .contact-text p {
+      font-size: 1rem;
+  }
+}
