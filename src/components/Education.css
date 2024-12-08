@@ -96,7 +96,7 @@
 /* Mobile (0px - 600px) */
 @media (max-width: 600px) {
   .education-container {
-      width: 80%; /* Expand to nearly full width */
+      width: 70%; /* Expand to nearly full width */
       padding: 15px; /* Reduce padding */
   }
 
